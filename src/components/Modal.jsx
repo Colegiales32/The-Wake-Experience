@@ -22,7 +22,7 @@ import Slider from './Slider';
 
   return (
     <div className={isOpen ? " modal-overlay modal-open z-50" : "modal-overlay"} onClick={handleOutsideClick}>
-      <div className={`${modalClassName}  w-100 w-screen h-screen md:w-3/4 md:h-2/3 justify-center align-center bg-grisclaro`}>
+      <div className={`${modalClassName}  w-100 w-screen md:w-3/4 h-min justify-center align-center bg-grisclaro`}>
         <div className=''>
         <button className="close-btn" onClick={handleClose}>&times;</button>
         <h2 className='font-bold font-stencil text-2xl mt-5'>{titulo}</h2>

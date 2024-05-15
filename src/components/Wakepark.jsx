@@ -11,7 +11,7 @@ const Wakepark = ({nombre, ubicacion, imagen,texto,orientacion}) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const mouseEnter= () =>{
-    setHoverPark("text-black")
+    setHoverPark("text-white")
   }
 
   const mouseOut = () => {
@@ -27,7 +27,7 @@ const Wakepark = ({nombre, ubicacion, imagen,texto,orientacion}) => {
   };
 
   return (
-    <div onMouseEnter={mouseEnter} onMouseLeave={mouseOut} className='flex flex-col md:flex-row justify-center h-1/3 py-2 my-8 gap-4  hover:bg-yellow-500 transition ease-in duration-500'>
+    <div onMouseEnter={mouseEnter} onMouseLeave={mouseOut} className='flex flex-col md:flex-row justify-center h-1/3 py-2 my-8 gap-4  hover:bg-black transition ease-in duration-500'>
       <button className='md:w-1/3 w-2/3 m-auto text-center md:text-left' onClick={handleOpenModal}>
         <div>
         <h2 className={` ${hoverPark} font-stencil text-2xl`}>{nombre}</h2>
