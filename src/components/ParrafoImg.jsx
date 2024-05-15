@@ -7,7 +7,7 @@ const ParrafoImg = ({ titulo, texto, imagen }) => {
         <h2 className="text-xl font-bold mb-4 mx-3">{titulo}</h2>
         <p className="text-left mx-3">{texto}</p>
       </div>
-      <img src={imagen} alt="Imagen" className="md:w-1/2 md:h-1/2 mx-3" />
+      <img src={imagen} alt="Imagen" className="md:w-1/3 mt-6 md:mt-0 w-full md:h-1/2 md:mx-3" />
     </div>
   );
 };
