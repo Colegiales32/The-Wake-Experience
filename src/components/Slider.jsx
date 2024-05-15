@@ -19,7 +19,7 @@ const Slider = ({ imagenes }) => {
     <div className='my-20'>       
         <div className="relative object-cover">
           <button className="prev  h-full w-1/3 text-left" onClick={handlePrev}>&#10094;</button>
-          <img className='object-cover align-middle' src={imagenes[index]} alt={`Imagen ${index + 1}`} />
+          <img className='object-fill align-middle' src={imagenes[index]} alt={`Imagen ${index + 1}`} />
           <button className="next  h-full w-1/3 text-right" onClick={handleNext}>&#10095;</button>
         </div>
     </div>

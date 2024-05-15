@@ -36,7 +36,7 @@ const Wakepark = ({nombre, ubicacion, imagen,texto,orientacion}) => {
         </div>
         </button>
    
-        <div className='md:w-1/3 w-1/2 object-contain m-auto ' >
+        <div className='md:w-1/3 w-2/3 object-contain m-auto ' >
         <Slider imagenes={imagen}/>
         </div>
         <Modal isOpen={modalOpen} onClose={handleCloseModal}
