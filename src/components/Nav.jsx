@@ -12,7 +12,7 @@ const Nav = ({fondo, tituloColor}) => {
   }
 
   return (
-    <nav className={`flex justify-between px-4 py-2 ${fondo} text-white`}>
+    <nav className={`flex justify-between w-full px-4 py-2 ${fondo} text-white`}>
       <div className='z-10 flex items-center gap-3'>
      <Link className='hover:animate-rotate-y animate-once hover:animate-duration-[3000ms] animate-delay-200 animate-ease-linear animate-normal' to="">
       <img src={logo} alt="Logo" className='w-28'/>
