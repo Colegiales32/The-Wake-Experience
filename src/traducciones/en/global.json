@@ -1,0 +1,41 @@
+{
+    "nav": {
+        "inicio": "Home",
+        "experiencias": "Experiences",
+        "wakeparks": "Wakeparks",
+        "quienes": "About Us"
+    },
+    "header": {
+        "titulo": "The Wake Experience x La Real",
+        "parrafo": "From La Real, we invite you to come and discover the best parks in our country and enjoy Argentine culture and cuisine.",
+        "botonInfo": "More Info",
+        "botonContacto": "Contact Us"
+    },
+    "servicios": {
+        "titulo": "Our Services",
+        "traslado": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "wakeboard": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "comida": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    "parrafoImg": {
+        "titulo": "Come and enjoy sports, nature, and typical Argentine cuisine",
+        "parrafo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "experiencias": {
+        "titulo": "TWE Experiences",
+        "exp1": "Come share with us an epic day full of wakeboarding and also discover the best of Argentine cuisine.",
+        "exp2": "We offer you a week full of Wakeboarding in the best parks in Argentina with the best instructors.",
+        "exp3": "Write to us and let's create the perfect experience tailored for you.",
+        "btn": "Learn More"
+    },
+    "wakeparks": {
+        "titulo": "Discover the best cables in Argentina",
+        "ubi": "Location:",
+        "ubiPampa": "Zarate, Buenos Aires Province",
+        "textPampa": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur velit, reiciendis illum expedita suscipit sit debitis fugiat fuga labore nihil iusto in mollitia repellendus alias error, dolorum dolor dolores pariatur!",
+        "ubiMolino": "Cordoba Province",
+        "textMolino": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur velit, reiciendis illum expedita suscipit sit debitis fugiat fuga labore nihil iusto in mollitia repellendus alias error, dolorum dolor dolores pariatur!",
+        "ubiOld": "Pilar, Buenos Aires Province",
+        "textOld": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur velit, reiciendis illum expedita suscipit sit debitis fugiat fuga labore nihil iusto in mollitia repellendus alias error, dolorum dolor dolores pariatur!"
+    }
+}

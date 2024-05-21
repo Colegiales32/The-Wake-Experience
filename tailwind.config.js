@@ -9,6 +9,7 @@ export default {
         'tarde':'#5C4A3E',
         'gris': '#363636',
         'grisclaro':'#646464',
+        'grisoscuro':'#242424',
         'grisTr':'#7C7A7A'
       },
       height: {
@@ -17,6 +18,9 @@ export default {
       backgroundImage: {
         'old': "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/olds.jpg')",
         'fondo': "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/fondo.jpeg')",
+        'usa' : "url('/usa.png')",
+        'esp' : "url('/espana.png')",
+        'brasil' : "url('/brasil.png')"
       }},
     fontFamily: {
       stencil:['Saira Stencil One', 'sans-serif'],

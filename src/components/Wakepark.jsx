@@ -2,10 +2,13 @@ import React from 'react'
 import { useState } from 'react';
 import Slider from './Slider'
 import Modal from './Modal';
+import { useTranslation } from 'react-i18next';
 
 
 
 const Wakepark = ({nombre, ubicacion, imagen,texto,orientacion}) => {
+
+  const [t,i18next] = useTranslation("global")
  
   const [hoverPark, setHoverPark]= useState("text-white")
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,18 +30,19 @@ const Wakepark = ({nombre, ubicacion, imagen,texto,orientacion}) => {
   };
 
   return (
-    <div onMouseEnter={mouseEnter} onMouseLeave={mouseOut} className='flex flex-col md:flex-row justify-center h-1/3 py-2 my-8 gap-4  hover:bg-black transition ease-in duration-500'>
+    <div onMouseEnter={mouseEnter} onMouseLeave={mouseOut} className='flex flex-col md:flex-row justify-center h-1/5 py-2  gap-4  hover:bg-black transition ease-in duration-500'>
       <button className='md:w-1/3 w-2/3 m-auto text-center md:text-left' onClick={handleOpenModal}>
         <div>
-        <h2 className={` ${hoverPark} font-stencil text-2xl`}>{nombre}</h2>
-        <h3 className={`font-path my-4 ${hoverPark}`}> <span className='font-bold'>Ubicacion: </span>{ubicacion}</h3>
-        <p className={`font-path my-4 ${hoverPark}`}>{texto}</p>
+        <h2 className={` ${hoverPark} font-stencil text-3xl`}>{nombre}</h2>
+        <h3 className={`font-path my-4 text-lg ${hoverPark}`}> <span className='font-bold'>{t("wakeparks.ubi")} </span>{ubicacion}</h3>
+        <p className={`font-path my-4 text-lg ${hoverPark}`}>{texto}</p>
         </div>
         </button>
    
-        <div className='md:w-1/3 w-2/3 object-contain m-auto ' >
+        <div className='md:w-1/5 w-5/6 object-contain m-auto ' >
         <Slider imagenes={imagen}/>
-        </div>
+         </div>
+    
         <Modal isOpen={modalOpen} onClose={handleCloseModal}
       titulo={nombre}
       ubicacion={ubicacion}
