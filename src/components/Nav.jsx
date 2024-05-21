@@ -23,8 +23,8 @@ const idiomaClick = () => {
 
   return (
     <nav className={`flex justify-between w-full px-4 pb-4 ${fondo} text-white`}>
-      <div className='flex flex-col w-full'>
-     <div className='flex flex-row justify-end mt-1 mb-2 mr-2 gap-3'>
+      <div className=' flex flex-col w-full'>
+     <div className='flex flex-row w-full justify-center md:justify-end mt-1 mb-2 gap-3'>
         <p className='font-path'>Idioma:</p>
         <Link className= {`transition-colors duration-500 ${idiomaActivo ==="es"? "bg-red-500" : ""} } rounded-md px-1 text-center`} onClick={() => { i18next.changeLanguage("es"); setIdiomaActivo("es"); }}>
           <img src="/esp.png" alt="" className='h-7' />
@@ -50,7 +50,7 @@ const idiomaClick = () => {
       </div>
       </div>
       </div>
-      <div className='z-10 md:hidden my-auto flex-auto '>
+      <div className='z-10 md:hidden flex flex-col mb-2 justify-end '>
       <Burguer clicked={clicked} handleClick={handleClick}/> {/* Pasa props y los definde, clicked para pasar el state y handleClick para pasar la funcion */}
       </div>
       <div id='BgDiv' className={`md:hidden initial ${clicked ? 'active' : ''}`}></div> {/* si clicked esta en true agrega la clase active y si no no */}

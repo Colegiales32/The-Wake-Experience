@@ -3,7 +3,7 @@ function Footer() {
         <footer className="bg-gris">
          <div className="flex flex-row py-9 justify-center">
            <div className="flex flex-col w-1/2">
-           <div className="flex flex-row gap-8 my-auto">
+           <div className="flex flex-row gap-8 m-auto">
             <img className="h-20 w-40" src="/twe3.png" alt="Logo" />
             <p className="my-auto text-4xl font-bold">X</p>
             <img className="h-20 w-20" src="/laRealLogo.png" alt="Logo" />
