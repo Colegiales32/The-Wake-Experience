@@ -29,7 +29,7 @@ const Opciones = () => {
                 <h1 className='text-center font-stencil text-4xl my-6 font-bold '>{t("experiencias.titulo")}</h1>
                 
                 <div className='h-screen'>
-                      <div className='relative flex flex-col pb-10 lg:flex-row w-4/5 gap-2 lg:gap-5 justify-between h-svh lg:h-2/3 mx-auto items-start'>
+                      <div className='relative flex flex-col pb-10 lg:flex-row w-4/5 gap-2 lg:gap-5 justify-between h-svh lg:h-4/5 mx-auto items-start'>
                     {exp.map((experiencia) => (
                       <Experiencia
                       

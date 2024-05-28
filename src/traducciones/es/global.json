@@ -46,17 +46,17 @@
       "1": {
         "nombre": "WakeDay",
         "boton":"Saber Mas",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere atque aliquid deleniti autem amet incidunt in sit porro placeat fuga culpa laboriosam iusto libero itaque mayores minus, assumenda dolorum doloremque!"
+        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere atque aliquid deleniti autem amet incidunt in sit porro placeat fuga culpa laboriosam iusto libero itaque mayores minus"
       },
       "2": {
         "nombre": "WakeWeek",
         "boton":"Saber Mas",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere atque aliquid deleniti autem amet incidunt in sit porro placeat fuga culpa laboriosam iusto libero itaque mayores minus, assumenda dolorum doloremque!"
+        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere atque aliquid deleniti autem amet incidunt in sit porro placeat fuga culpa laboriosam iusto libero itaque mayores minus"
       },
       "3": {
         "nombre": "A tu Medida",
         "boton": "Saber Mas",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere atque aliquid deleniti autem amet incidunt in sit porro placeat fuga culpa laboriosam iusto libero itaque mayores minus, assumenda dolorum doloremque!"
+        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere atque aliquid deleniti autem amet incidunt in sit porro placeat fuga culpa laboriosam iusto libero itaque mayores minus"
       }
     }
   }

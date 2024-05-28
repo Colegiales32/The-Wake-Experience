@@ -27,10 +27,10 @@ const Experiencia = ({ id, titulo, texto,boton, expandidoId, onClick, botonCierr
                         </button>
                     )}
                 {!estaExpandido && (
-                        <p className='text-center font-path align-bottom text-white text-sm mt-14'>{t(texto)}</p>
+                        <p className='text-center font-path align-bottom text-white text-xs mt-14'>{t(texto)}</p>
                 )}
                 {estaExpandido && (
-                        <p className='text-center font-path align-bottom text-white text-sm mt-14'>EL BOTON ESTA OCULTO</p>
+                        <p className='text-center font-path align-bottom text-white text-xs mt-14'>EL BOTON ESTA OCULTO</p>
                     )}
             </div>
         </div>
