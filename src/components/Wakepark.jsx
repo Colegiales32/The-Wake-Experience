@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 
 
-const Wakepark = ({nombre, ubicacion, imagen,texto,orientacion}) => {
+const Wakepark = ({nombre, ubicacion, imagen,texto}) => {
 
   const [t,i18next] = useTranslation("global")
  
