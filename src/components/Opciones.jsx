@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
-function Experiencias() {
+function Opciones() {
 const [t, i18next] = useTranslation("global")
 
     return (
@@ -36,4 +36,4 @@ const [t, i18next] = useTranslation("global")
     )
 }
 
-export default Experiencias
+export default Opciones;

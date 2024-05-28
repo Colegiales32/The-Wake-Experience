@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-import Wpp from './components/Wpp'
 import Home from './pages/Home'
 import Nosotros from './pages/Nosotros'
-import Opciones from './pages/Experiencias'
 import Wakeparks from './pages/Wakeparks'
+import Experiencias from './pages/Experiencias'
 
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
       <Routes>
         <Route index element={<Home/>} />
         <Route path="/nosotros" element={<Nosotros/>} />
-        <Route path="/experiencias" element={<Opciones/>} />
+        <Route path="/experiencias" element={<Experiencias/>} />
         <Route path="/wakeparks" element={<Wakeparks/>} />
       </Routes>
     </div>

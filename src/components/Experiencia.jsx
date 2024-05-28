@@ -10,7 +10,7 @@ const Experiencia = ({ id, titulo, texto,boton, expandidoId,handleExpandido, bot
     
     return (
         <div
-            className={` bg-old bg-center bg-cover bg-no-repeat shrink grow overflow-y-hidden transition-all duration-1000 cursor-pointer ${estaExpandido ? 'mb-4 lg:h-full w-full relative basis-full ' : 'relative basis-0 w-auto my-auto h-1/2'} ${expandidoId && experiencia.id !== expandidoId ? 'opacity-1 ' : 'opacity-1'}`}
+            className={` bg-old bg-center bg-cover bg-no-repeat shrink grow overflow-y-hidden transition-all duration-1000 cursor-pointer lg:my-4 ${estaExpandido ? 'mb-4 lg:h-full w-full relative basis-full ' : 'relative basis-0 w-auto my-auto h-1/2'} ${expandidoId && experiencia.id !== expandidoId ? 'opacity-1 ' : 'opacity-1'}`}
             onClick={()=>handleExpandido(id)} // Toggle expandidoId
             >
             
