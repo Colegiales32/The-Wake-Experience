@@ -20,7 +20,8 @@ export default {
         'fondo': "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/fondo.jpeg')",
         'usa' : "url('/usa.png')",
         'esp' : "url('/espana.png')",
-        'brasil' : "url('/brasil.png')"
+        'brasil' : "url('/brasil.png')",
+        'opaco': "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))"
       }},
     fontFamily: {
       stencil:['Saira Stencil One', 'sans-serif'],
