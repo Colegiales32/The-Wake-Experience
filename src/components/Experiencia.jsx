@@ -16,7 +16,7 @@ const Experiencia = ({ id, titulo, texto,boton, expandidoId,handleExpandido, bot
             
                 {!estaExpandido && (
                     <div className={`pb-8 px-4 h-full flex flex-col  justify-between`}>
-                    <h2 className='text-center font-stencil text-2xl font-bold mt-3'>{t(titulo)}</h2>
+                    <h2 className='text-center font-stencil text-2xl lg:font-bold mt-3 text-white lg:text-black'>{t(titulo)}</h2>
                     <button className='text-center text-2xl absolute top-0 left-0 h-full w-full opacity-0 hover:opacity-100 transition-all ease-in duration-1000 bg-transparent hover:bg-opaco text-white'>
                         {t(boton)}
                     </button>
