@@ -21,7 +21,8 @@ export default {
         'usa' : "url('/usa.png')",
         'esp' : "url('/espana.png')",
         'brasil' : "url('/brasil.png')",
-        'opaco': "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))"
+        'opaco': "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))",
+        'suave': "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2))"
       }},
     fontFamily: {
       stencil:['Saira Stencil One', 'sans-serif'],
