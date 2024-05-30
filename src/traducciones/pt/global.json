@@ -4,7 +4,8 @@
         "inicio": "Início",
         "experiencias": "Experiências",
         "wakeparks": "Wakeparks",
-        "quienes": "Quem Somos"
+        "quienes": "Quem Somos",
+        "contacto" : "Contato"
     },
     "header": {
         "titulo": "The Wake Experience x La Real",
@@ -59,5 +60,21 @@
           "boton": "Saber mais",
           "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere atque aliquid deleniti autem amet incidunt in sit porro placeat fuga culpa laboriosam iusto libero itaque mayores minus"
         }
+      },
+      "footer":{
+          "contacto" : "Contate-nos"
+      },
+      "contacto": {
+        "titulo": "Contate-Nos:",
+        "nombre": "Nome e Sobrenome:",
+        "email": "Email:",
+        "pais": "País:",
+        "asunto": "Assunto:",
+        "mensaje": {
+          "titulo": "Mensagem:",
+          "placeholder": "Deixe-nos sua consulta ou mensagem"
+        },
+        "enviar": "Enviar",
+        "enviado": "A mensagem foi enviada"
       }
 }
