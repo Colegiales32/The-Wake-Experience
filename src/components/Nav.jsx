@@ -36,7 +36,7 @@ const Nav = ({fondo, tituloColor}) => {
   return (
     <div>
      <div className={`flex flex-row w-full justify-center md:justify-end pb-2 gap-3 ${fondo} text-white py-1 md:pr-6`}>
-        <p className='font-path'>{t("nav.idioma")}:</p>
+        <p className='font-path text-black'>{t("nav.idioma")}:</p>
         <Link className= {`transition-colors duration-500 ${idiomaActivo ==="es"? "bg-red-500" : ""} } rounded-md px-1 text-center`} onClick={() => idiomaClick("es")}>
         <img src="/esp.png" alt="" className='h-7' />
         </Link>
