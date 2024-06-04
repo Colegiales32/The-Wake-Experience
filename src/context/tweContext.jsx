@@ -8,10 +8,6 @@ export const TweProvider = ({children}) => {
     const [clicked,setClicked] = useState(false)
     const [expandidoId, setExpandidoId] = useState();
     const [abreExpandido, setAbreExpandido] = useState()
-
-    useEffect(() => {
-     console.log('abre expandido fuera es  ' + abreExpandido)
-    }, [])
     
 
     useEffect(() => {

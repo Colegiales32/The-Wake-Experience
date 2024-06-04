@@ -27,13 +27,20 @@ useEffect(() => {
 }, []); // El array de dependencias está vacío, lo que significa que esta función se ejecutará solo una vez después del montaje del componente
 
   
-useEffect((id) => {
- if (abreExpandido !== null) {
-  setExpandidoId(abreExpandido);
-  tituloRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
- }
-
-}, [])
+useEffect(() => {
+  if (abreExpandido !== null) {
+      setExpandidoId(abreExpandido);
+      // Scroll hacia el título cuando abreExpandido no sea null
+      if (tituloRef.current) {
+          tituloRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+  } else if (expandidoId === undefined || expandidoId === null) {
+      // Scroll hacia arriba solo si expandidoId es indefinido o nulo
+      if (top.current) {
+        top.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}, [abreExpandido, expandidoId]);
 
 
 
