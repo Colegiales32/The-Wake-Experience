@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Slider from './Slider'
 import Modal from './Modal';
 import { useTranslation } from 'react-i18next';
@@ -12,6 +12,22 @@ const Wakepark = ({nombre, ubicacion, imagen,texto}) => {
  
   const [hoverPark, setHoverPark]= useState("text-white")
   const [modalOpen, setModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (modalOpen) {
+        console.log("es true")
+      document.body.style.overflowY = 'hidden';
+      document.body.style.overflowX = '';
+      document.documentElement.style.overflowX = '';
+    } else {
+        console.log('es false')
+      document.body.style.overflowY = 'auto';
+      document.body.style.overflowX = 'hidden';
+      document.documentElement.style.overflowX = 'hidden';
+  
+    }
+  }, [modalOpen]);
+  
 
   const mouseEnter= () =>{
     setHoverPark("text-white")

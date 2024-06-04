@@ -1,15 +1,19 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useContext, useEffect } from 'react';
 import Nav from '../components/Nav';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
 import Experiencia from '../components/Experiencia';
 import { exp } from '/data/db';
 import Wpp from '../components/Wpp';
+import TweContext from '../context/tweContext';
+import { useLinkClickHandler } from 'react-router-dom';
 
 const Experiencias = () => {
   const [expandidoId, setExpandidoId] = useState();
   const [t, i18next] = useTranslation("global")
   const tituloRef = useRef(null);
+
+  const {clicked, setClicked} = useContext(TweContext)
   
   const handleExpandido = (id) => {
     setExpandidoId(id);

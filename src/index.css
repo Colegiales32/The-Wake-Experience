@@ -4,12 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+ html,body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
 }
+
+
+
+
+
   
   .prev, .next {
     position: absolute;
@@ -52,13 +56,13 @@ html, body {
   display: inline-block;
 }
 .nav-icon-5 span{
-  background-color:#fff;
+  background-color:black;
   position: absolute;
   border-radius: 2px;
-  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  transition: all .3s cubic-bezier(.8, .5, .2, 1.4);
   width:100%;
   height: 4px;
-  transition-duration: 500ms
+  transition-duration: 900ms
 }
 .nav-icon-5 span:nth-child(1){
   top:0px;
@@ -85,6 +89,7 @@ html, body {
 .nav-icon-5.open span:nth-child(1){
   transform: rotate(45deg);
   top: 13px;
+  background-color: white;
 }
 .nav-icon-5.open span:nth-child(2){
   opacity:0;
@@ -92,11 +97,13 @@ html, body {
 .nav-icon-5.open span:nth-child(3){
   transform: rotate(-45deg);
   top: 13px;
+  background-color: white;
 }
 
 /* Links Menu */
 .links{
   position: absolute;
+  width: 60%;
   top: -700px;
   left: -2000px;
   right: 0;
@@ -125,7 +132,8 @@ html, body {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 30%;
+
+  top: 20%;
   left: 0;
   right: 0;
   text-align: center;
@@ -148,7 +156,7 @@ transition: all 1s ease ;
 
 &.active{
   position:absolute;
-  border-radius: 0 0 40% 0;
+  border-radius: 0 0 30% 0;
   top: 0;
   left: 0;
   width: 100%;

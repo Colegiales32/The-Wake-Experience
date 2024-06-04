@@ -5,7 +5,7 @@ function Servicios() {
 
     return (
         <div className='bg-tarde pt-14 pb-28'>
-        <h2 className='text-center font-bold text-4xl'>{t("servicios.titulo")}</h2>
+        <h2 className='text-center font-bold mt-4 text-4xl'>{t("servicios.titulo")}</h2>
         <div className='font-path flex-col flex md:flex-row mx-11 text-center mt-11 gap-2'>
         <div className='text-center'>
             <img className='h-32 m-auto' src="/van-1.png" alt="" />

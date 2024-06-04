@@ -53,23 +53,23 @@ const handleSubmit = (event) => {
         <h1 className='font-stencil text-3xl text-center font-bold mx-auto lg:absolute top-10 w-1/2'>{t("contacto.titulo")}</h1>
              <fieldset className='flex flex-row justify-between'>
             <label className='font-path font-bold text-xl   text-black'>{t("contacto.nombre.nombre")}</label>
-            <input className='w-1/2 outline-4 outline outline-offset-2 placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:mr-2 placeholder:font-path placeholder:font-light placeholder:text-right' placeholder={t("contacto.nombre.descripcion")} required name='name' type="text" />
+            <input className='w-1/2 outline-4 outline outline-offset-2 px-2 text-right placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:mr-2 placeholder:font-path placeholder:font-light placeholder:text-right' placeholder={t("contacto.nombre.descripcion")} required name='name' type="text" />
             </fieldset>
             <fieldset className='flex flex-row gap-8 justify-between'>
             <label className='font-path font-bold text-xl   text-black'>{t("contacto.pais.pais")}</label>
-            <input className='w-1/2 outline outline-offset-2  placeholder:text-black placeholder:font-path placeholder:font-light outline-black bg-opacity-30 bg-black font-path font-bold rounded-md placeholder:mr-2 placeholder:text-right' placeholder={t("contacto.pais.descripcion")} name='pais' required type="text" />
+            <input className='w-1/2 outline-4 outline outline-offset-2 px-2 text-right placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:mr-2 placeholder:font-path placeholder:font-light placeholder:text-right' placeholder={t("contacto.pais.descripcion")} name='pais' required type="text" />
             </fieldset>
             <fieldset className='flex flex-row gap-8 justify-between'>
             <label className='font-path font-bold text-xl   text-black'>{t("contacto.email.email")}</label>
-            <input className='w-1/2 outline outline-offset-2  placeholder:text-black outline-black bg-opacity-30 bg-black rounded-md font-path font-bold placeholder:mr-2 placeholder:text-right placeholder:font-path placeholder:font-light' placeholder={t("contacto.email.descripcion")} name='email' required type="email" />
+            <input className='w-1/2 outline-4 outline outline-offset-2 px-2 text-right placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:mr-2 placeholder:font-path placeholder:font-light placeholder:text-right' placeholder={t("contacto.email.descripcion")} name='email' required type="email" />
             </fieldset>
             <fieldset  className='flex flex-row gap-8 w-full justify-between'>
                 <label className='font-path font-bold text-xl  text-black'>{t("contacto.asunto.asunto")}</label>
-                <input className='w-1/2 outline outline-offset-2  placeholder:text-black outline-black bg-opacity-30 bg-black rounded-md font-path font-bold placeholder:mr-2 placeholder:text-right placeholder:font-path placeholder:font-light' placeholder={t("contacto.asunto.descripcion")} name='asunto' required type="text" />
+                <input className='w-1/2 outline-4 outline outline-offset-2 pr-2 text-right placeholder:text-black outline-black bg-opacity-30 bg-black rounded-md font-path font-bold placeholder:mr-2 placeholder:text-right placeholder:font-path placeholder:font-light' placeholder={t("contacto.asunto.descripcion")} name='asunto' required type="text" />
             </fieldset>
             <fieldset className='flex flex-col gap-2'>
             <label className='font-path font-bold text-xl  text-black text-center w-full'>{t("contacto.mensaje.titulo")}</label>
-            <textarea className='w-full mx-auto h-32  outline outline-offset-2  placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:pl-2 placeholder:pt-2 placeholder:font-path placeholder:font-light' name='mensaje' placeholder={t("contacto.mensaje.placeholder")} required type="text" />
+            <textarea className='w-full mx-auto h-32 p-2 outline outline-offset-2  placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:pl-2 placeholder:pt-2 placeholder:font-path placeholder:font-light' name='mensaje' placeholder={t("contacto.mensaje.placeholder")} required type="text" />
             </fieldset> 
             <div className='flex justify-center'>
             <button className='w-1/2 py-2 text-lg md:w-1/3 mx-auto md:m-0 text-center bg-black hover:bg-grisoscuro rounded-full  text-white font-bold transition-colors duration-1000'>{t("contacto.enviar")}</button>
@@ -86,7 +86,7 @@ const handleSubmit = (event) => {
         <h2 className='font-stencil text-3xl text-center font-bold mx-auto lg:absolute top-10 lg:w-1/2'>{t("mascontacto.titulo")}</h2>
                     <div className='flex lg:mt-28 mt-4 items-center gap-x-3 flex-row'>
                         <img className='h-11' src={mail} alt="Email" />
-                        <p className='font-path font-semibold'>thewakeexperience@gmail.com</p>
+                        <Link to="mailto:thewakeexperience@gmail.com"  className='font-path font-semibold'>thewakeexperience@gmail.com</Link>
 
                     </div>
         <div className='lg:w-2/3 shrink mt-6 flex flex-col gap-3'>
@@ -111,41 +111,41 @@ const handleSubmit = (event) => {
             
                     <div className='flex flex-row items-center relative gap-x-3'>
                        <div className='flex flex-col h-full gap-y-4'>
+                        <p className='font-path font-bold'>Lucas:</p>
                         <p className='font-path font-bold'>Lautaro:</p>
-                        <p className='font-path font-bold'>Lautaro:</p>
-                        <p className='font-path font-bold'>Lautaro:</p>
+                        <p className='font-path font-bold'>Ezequiel:</p>
                        </div>
                        <div className='w-1/2 flex flex-col gap-y-4' >
                         <div className='flex flex-row gap-2 '>
-                         <Link to="">
+                         <Link to="https://www.instagram.com/gonzalezluc/">
                                 <img className='h-7 my-auto ' src={instagram} alt="Instagram" />
                          </Link>
                          <Link to="">
                              <img className='h-7' src={facebook} alt="Facebook" />
                          </Link>
-                         <Link to="">
+                         <Link to="https://wa.me/+5491130135331">
                              <img className='h-7' src={wpp} alt="Whatsapp" />
                          </Link>
                                  </div>
                         <div className='flex flex-row gap-2'>
-                        <Link to="">
+                        <Link to="https://www.instagram.com/lautilarosa/">
                              <img className='h-7 my-auto' src={instagram} alt="Instagram" />
                          </Link>
                          <Link to="">
                                <img className='h-7' src={facebook} alt="Facebook" />
                          </Link>
-                         <Link to="">
+                         <Link to="https://wa.me/+541130344880">
                              <img className='h-7' src={wpp} alt="Whatsapp" />
                          </Link>
                                  </div>
                         <div className='flex flex-row gap-2'>
-                        <Link to="">
+                        <Link to="https://www.instagram.com/ezemarando/">
                              <img className='h-7 my-auto' src={instagram} alt="Instagram" />
                          </Link>
                             <Link to="">
                                 <img className='h-7' src={facebook} alt="Facebook" />
                             </Link>
-                            <Link to="">
+                            <Link to="https://wa.me/+5491136386599">
                                 <img className='h-7' src={wpp} alt="Whatsapp" />
                             </Link>
                     </div>

@@ -65,16 +65,33 @@
           "contacto" : "Contate-nos"
       },
       "contacto": {
-        "titulo": "Contate-Nos:",
+      "titulo": "Contate-Nos",
+      "nombre": {
         "nombre": "Nome e Sobrenome:",
+        "descripcion": "Seu Nome e Sobrenome"
+      },
+      "email": {
         "email": "Email:",
+        "descripcion": "Seu Email"
+      },
+      "pais": {
         "pais": "País:",
+        "descripcion": "Onde você está?"
+      },
+      "asunto": {
         "asunto": "Assunto:",
-        "mensaje": {
-          "titulo": "Mensagem:",
-          "placeholder": "Deixe-nos sua consulta ou mensagem"
-        },
-        "enviar": "Enviar",
-        "enviado": "A mensagem foi enviada"
-      }
+        "descripcion": "Assunto"
+      },
+      "mensaje": {
+        "titulo": "Mensagem:",
+        "placeholder": "Deixe-nos sua consulta ou mensagem"
+      },
+      "enviar": "Enviar",
+      "enviado": "A mensagem foi enviada"
+    },
+    "mascontacto": {
+      "titulo": "Outras Formas",
+      "redes": "Redes Sociais",
+      "nosotros": "Sobre Nós"
+    }
 }

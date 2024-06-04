@@ -64,17 +64,35 @@
       "footer":{
           "contacto" : "Contact us"
       },
-        "contacto": {
-          "titulo": "Contact Us:",
-          "nombre": "Full Name:",
-          "email": "Email:",
-          "pais": "Country:",
-          "asunto": "Subject:",
-          "mensaje": {
-            "titulo": "Message:",
-            "placeholder": "Leave us your inquiry or message"
-          },
-          "enviar": "Send",
-          "enviado": "The message has been sent"
-        }
+      "contacto": {
+      "titulo": "Contact Us",
+  "nombre": {
+    "nombre": "Name and Surname:",
+    "descripcion": "Your Name and Surname"
+  },
+  "email": {
+    "email": "Email:",
+    "descripcion": "Your Email"
+  },
+  "pais": {
+    "pais": "Country:",
+    "descripcion": "Where are you?"
+  },
+  "asunto": {
+    "asunto": "Subject:",
+    "descripcion": "Subject"
+  },
+  "mensaje": {
+    "titulo": "Message:",
+    "placeholder": "Leave us your query or message"
+  },
+  "enviar": "Send",
+  "enviado": "The message has been sent"
+},
+"mascontacto": {
+  "titulo": "Other Ways",
+  "redes": "Social Media",
+  "nosotros": "About Us"
 }
+        }
+          

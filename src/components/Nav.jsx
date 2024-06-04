@@ -1,13 +1,20 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect, useContext } from 'react';
 import logo from '/twe3.png'
 import { Link,useLocation } from 'react-router-dom';
 import Burguer from './Burguer';
 import { useTranslation } from 'react-i18next';
+import TweContext from '../context/tweContext';
 
-const Nav = ({fondo, tituloColor}) => {
+const Nav = ({fondo}) => {
   const [t, i18next] = useTranslation("global")
-  const [clicked, setClicked] = useState(false)
+  const {clicked,setClicked} = useContext(TweContext)
   const location = useLocation()
+  
+  useEffect(() => {
+    setClicked(!clicked ? '' : false)
+  
+  }, [location])
+  
 
   const estaActivo = (ruta) => {
     return location.pathname === ruta ? 'bg-gray-500' : 'bg-black';
@@ -34,7 +41,7 @@ const Nav = ({fondo, tituloColor}) => {
   }
 
   return (
-    <div>
+    <div >
      <div className={`flex flex-row w-full justify-center md:justify-end pb-2 gap-3 ${fondo} text-white py-1 md:pr-6`}>
         <p className='font-path text-black'>{t("nav.idioma")}:</p>
         <Link className= {`transition-colors duration-500 ${idiomaActivo ==="es"? "bg-red-500" : ""} } rounded-md px-1 text-center`} onClick={() => idiomaClick("es")}>
