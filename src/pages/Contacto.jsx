@@ -48,18 +48,18 @@ const handleSubmit = (event) => {
     <div>
     <div className='min-h-screen bg-gray-900 bg-blend-lighten bg-fondo bg-cover bg-no-repeat'>
         <Nav/>
-        <div className='flex flex-col lg:flex-row w-4/5 mx-auto justify-between h-4/5 relative'>
+        <div className='flex flex-col lg:flex-row w-4/5 mx-auto gap-3 justify-between h-4/5 relative'>
         <form ref={refForm} action="" onSubmit={handleSubmit} className='lg:w-1/2 shrink lg:mt-32 flex flex-col gap-3'>
         <h1 className='font-stencil text-3xl text-center font-bold mx-auto lg:absolute top-10 w-1/2'>{t("contacto.titulo")}</h1>
-             <fieldset className='flex flex-row justify-between'>
-            <label className='font-path font-bold text-xl   text-black'>{t("contacto.nombre.nombre")}</label>
+             <fieldset className='flex flex-row justify-between my-2'>
+            <label className='font-path font-bold text-xl w-1/2  text-black'>{t("contacto.nombre.nombre")}</label>
             <input className='w-1/2 outline-4 outline outline-offset-2 px-2 text-right placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:mr-2 placeholder:font-path placeholder:font-light placeholder:text-right' placeholder={t("contacto.nombre.descripcion")} required name='name' type="text" />
             </fieldset>
-            <fieldset className='flex flex-row gap-8 justify-between'>
+            <fieldset className='flex flex-row gap-8 mb-2 justify-between'>
             <label className='font-path font-bold text-xl   text-black'>{t("contacto.pais.pais")}</label>
             <input className='w-1/2 outline-4 outline outline-offset-2 px-2 text-right placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:mr-2 placeholder:font-path placeholder:font-light placeholder:text-right' placeholder={t("contacto.pais.descripcion")} name='pais' required type="text" />
             </fieldset>
-            <fieldset className='flex flex-row gap-8 justify-between'>
+            <fieldset className='flex flex-row gap-8 mb-2 justify-between'>
             <label className='font-path font-bold text-xl   text-black'>{t("contacto.email.email")}</label>
             <input className='w-1/2 outline-4 outline outline-offset-2 px-2 text-right placeholder:text-black outline-black font-path font-bold bg-opacity-30 bg-black rounded-md placeholder:mr-2 placeholder:font-path placeholder:font-light placeholder:text-right' placeholder={t("contacto.email.descripcion")} name='email' required type="email" />
             </fieldset>
