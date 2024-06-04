@@ -31,7 +31,7 @@ const Experiencia = ({ id, titulo, texto,boton,handleExpandido, botonCierre,expe
                         <button onClick={botonCierre} className='absolute z-50 text-4xl hover:text-gray-800 top-3 right-5 text-white'>
                             x
                         </button>
-                        <div>
+                        <div className='overflow-scroll'>
                         <h2 className='text-center font-stencil text-2xl font-bold mt-3'>{t(titulo)}</h2>
                          <div className='md:w-1/3 w-full md:mx-auto' > 
                          <Slider imagenes={imagenes}/>
