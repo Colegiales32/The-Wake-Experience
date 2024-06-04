@@ -9,27 +9,55 @@ import TweContext from '../context/tweContext';
 import { useLinkClickHandler } from 'react-router-dom';
 
 const Experiencias = () => {
-  const [expandidoId, setExpandidoId] = useState();
+  const {expandidoId, setExpandidoId,abreExpandido,setAbreExpandido} =  useContext(TweContext)
+
   const [t, i18next] = useTranslation("global")
   const tituloRef = useRef(null);
+  const top = useRef(null)
 
-  const {clicked, setClicked} = useContext(TweContext)
   
+console.log('abre expandido es  ' + abreExpandido)  
+
+useEffect(() => {
+  // La función de limpieza se ejecutará cuando el componente se desmonte
+  return () => {
+       setAbreExpandido(null);
+        setExpandidoId(null);   // Restablecer el estado a null cuando salgas de la ruta
+  };
+}, []); // El array de dependencias está vacío, lo que significa que esta función se ejecutará solo una vez después del montaje del componente
+
+  
+useEffect((id) => {
+ if (abreExpandido !== null) {
+  setExpandidoId(abreExpandido);
+  tituloRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+ }
+
+}, [])
+
+
+
   const handleExpandido = (id) => {
     setExpandidoId(id);
     if (tituloRef.current) {
       tituloRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+  
   };
   const handleCierre = (e) => {
     e.stopPropagation();
     setExpandidoId(null);
+    setAbreExpandido(null)
+    if (top.current) {
+      top.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
     console.log("mostrando",expandidoId)
   };
+
   
 
     return (
-        <div>
+        <div ref={top}>
             <div className='bg-fondo bg-no-repeat bg-cover min-h-screen'>
                 <Nav/>
                 
@@ -45,7 +73,6 @@ const Experiencias = () => {
                       titulo={experiencia.nombre}
                       texto={experiencia.texto}
                       boton={experiencia.boton}
-                      expandidoId={expandidoId} // Pasar el expandidoId como prop
                       handleExpandido={handleExpandido} // Pasar la función handleExpandido
                       botonCierre={handleCierre}
                       experiencia={experiencia}  

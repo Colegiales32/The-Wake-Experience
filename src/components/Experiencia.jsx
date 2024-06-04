@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from './Slider';
+import TweContext from '../context/tweContext';
 
 
-const Experiencia = ({ id, titulo, texto,boton, expandidoId,handleExpandido, botonCierre,experiencia, imagenes}) => {
+const Experiencia = ({ id, titulo, texto,boton,handleExpandido, botonCierre,experiencia, imagenes}) => {
     const [t, i18next] = useTranslation("global")
+    const {expandidoId,abreExpandido} = useContext(TweContext)
+    
 
     const estaExpandido = expandidoId === id;
+    
     
     return (
         <div

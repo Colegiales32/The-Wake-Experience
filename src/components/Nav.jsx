@@ -9,7 +9,7 @@ const Nav = ({fondo}) => {
   const [t, i18next] = useTranslation("global")
   const {clicked,setClicked} = useContext(TweContext)
   const location = useLocation()
-  
+
   useEffect(() => {
     setClicked(!clicked ? '' : false)
   
@@ -61,7 +61,7 @@ const Nav = ({fondo}) => {
      
        <div className='flex flex-row justify-between  w-full '>
          <div className='z-10 flex items-center gap-3'>
-            <Link className='hover:animate-rotate-y animate-once hover:animate-duration-[3000ms] animate-delay-200 animate-ease-linear animate-normal' to="">
+            <Link className='hover:animate-rotate-y animate-once hover:animate-duration-[3000ms] animate-delay-200 animate-ease-linear animate-normal' to="/">
             <img src={logo} alt="Logo" className='w-32'/>
             </Link>
         </div>
