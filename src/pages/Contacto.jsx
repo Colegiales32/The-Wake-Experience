@@ -39,7 +39,8 @@ const handleSubmit = (event) => {
         handleEnviado(true)
         refForm.current.reset();;
     })
-    .catch (()=> {handleEnviado(false);
+    .catch (()=> {
+        handleEnviado(false);
         
     })
 }
@@ -74,12 +75,13 @@ const handleSubmit = (event) => {
             <div className='flex justify-center'>
             <button className='w-1/2 py-2 text-lg md:w-1/3 mx-auto md:m-0 text-center bg-black hover:bg-grisoscuro rounded-full  text-white font-bold transition-colors duration-1000'>{t("contacto.enviar")}</button>
             </div>
-                <div className={`${mensajeEnviado===true ? 'opacity-1' : 'opacity-0'} flex justify-center items-center transition-all duration-600 h-11 bg-green-600`}>
-                    <p className='text-center my-auto font-path font-bold'>{t("contacto.enviado")}</p>
+                <div className={`${mensajeEnviado===true ? 'h-11' : 'h-0'} flex justify-center rounded-lg items-center transition-all duration-600 bg-green-600`}>
+                    <p className={`${mensajeEnviado === true ? 'opacity-1' : 'opacity-0'} text-center my-auto text-lg  font-path font-bold`}>{t("contacto.enviado")}</p>
                 </div>
 
         </form>
-        <div className=' bg-opaco'>
+        <div className='lg:w-3 lg:h-auto h-4 w-full '>
+            <div className='bg-opaco w-full h-full lg:h-2/3 lg:mt-20 rounded-md'></div>
           
         </div>
         <div className='flex flex-col mb-5 lg:w-1/3'>
