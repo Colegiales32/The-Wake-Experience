@@ -7,7 +7,7 @@ const TweContext = createContext();
 export const TweProvider = ({children}) => {
     const [clicked,setClicked] = useState(false)
     const [expandidoId, setExpandidoId] = useState();
-    const [abreExpandido, setAbreExpandido] = useState()
+    const [abreExpandido, setAbreExpandido] = useState(null)
     
 
     useEffect(() => {
