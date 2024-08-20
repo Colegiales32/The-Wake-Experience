@@ -30,7 +30,7 @@ const handleEnviado = (estado)=> {
 const handleSubmit = (event) => {
     event.preventDefault(); // Previene el comportamiento por Default del Elemento
     const serviceId = "service_p51ujsg";
-    const templateId= "template_pd5ptoq";
+    const templateId= "template_czt5qhf";
     
     const apikey = "4zJBLlGcN_nk6gRGs";
 
