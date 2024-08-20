@@ -32,7 +32,7 @@ const handleSubmit = (event) => {
     const serviceId = "service_p51ujsg";
     const templateId= "template_pd5ptoq";
     
-    const apikey = "Mgq1liAyeoB0KZYOO";
+    const apikey = "4zJBLlGcN_nk6gRGs";
 
     emailjs.sendForm(serviceId,templateId,refForm.current,apikey)
     .then(()=>{ 
